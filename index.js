@@ -2,13 +2,17 @@
 
 // Import a library to help create a component
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 // Only getting the Text and AppRegistry properties from the ReactNative library
-import Header from './src/components/header';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component (one component per file)
 const App = () => (
-	<Header headerText={'Albums'} />
+	<View>
+		<Header headerText={'Albums'} />
+		<AlbumList />
+	</View>
 );
 
 // Render it to the device
