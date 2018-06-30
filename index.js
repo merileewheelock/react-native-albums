@@ -8,8 +8,9 @@ import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
 // Create a component (one component per file)
+//Since we are using ScrollView (in AlbumList), we need flex: 1 at the root View
 const App = () => (
-	<View>
+	<View style={{ flex: 1 }}>
 		<Header headerText={'Albums'} />
 		<AlbumList />
 	</View>
